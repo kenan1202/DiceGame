@@ -1,0 +1,99 @@
+@mixin setCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin addMargin($top, $width, $height) {
+    position: absolute;
+    top: $top;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: $width;
+    height: $height;
+    background-color: $boxColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-family: 'New Tegomin', serif;
+    font-weight: 700;
+}
+
+@mixin addToolForIcons {
+    color: $backColor1;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@mixin setArea($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin sizeofFonts($fontSize, $marginTop) {
+    font-size: $fontSize;
+    margin-top: $marginTop;
+}
+
+body {
+    max-width: 100%;
+    height: 100vh;
+    background-image: linear-gradient($backColor1, $backColor2);
+    @include setCenter;
+}
+
+.box {
+    @include setArea(900px, 600px);
+    border-radius: $radius;
+    position: relative;
+    display: flex;
+}
+.player {
+    @include setArea(450px, 600px);
+    position: absolute;
+    @include setCenter;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.player .currentBox {
+    @include setArea(150px, 90px);
+    border-radius: $radius;
+    background-color: $backColor1;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.newGame {
+    @include addMargin(10%, 200px, 40px);
+}
+.newGame i {
+    @include addToolForIcons;
+}
+.rollDice {
+    @include addMargin(75%, 170px, 40px);
+}
+.rollDice i {
+    @include addToolForIcons;
+}
+.hold {
+    @include addMargin(85%, 140px, 40px);
+}
+.hold i {
+    @include addToolForIcons;
+}
+.diceBox {
+    @include addMargin(45%, 170px, 170px);
+    font-size: 90px;
+    display: none;
+}
+.header .totalScore {
+    color: $backColor1;
+    @include sizeofFonts(50px, -5px);
+}
+.currentBox .currentText {
+    @include sizeofFonts(20px, 10px);
+}

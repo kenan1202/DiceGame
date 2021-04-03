@@ -1,0 +1,34 @@
+@import 'sass/variables.scss';
+@import 'sass/mixins.scss';
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+#player1 {
+    left: 0;
+    background-color: rgba($boxColors, 0.8);
+    border-top-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+}
+#player2 {
+    right: 0;
+    background-color: rgba($boxColors, 0.4);
+    border-top-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+}
+.player .header {
+    text-align: center;
+}
+.header .playerText {
+    font-size: 40px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.player .currentText {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.currentBox .currentDice {
+    font-size: 32px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

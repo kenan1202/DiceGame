@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"/>
+</head>
+<body>
+
+    <div class = "box">
+        <div class = "player" id = "player1">
+            <div class = "header">
+                <h1 class = "playerText" id = "playerText2">Player 1</h1>
+                <p class = "totalScore" id = "totalScore1">0</p>
+            </div>
+
+            <div class = "currentBox">
+                <p class = "currentText">Current</p>
+                <p class = "currentDice" id = "currentDice1">0</p>
+            </div>
+        </div>
+
+        <div class = "player" id = "player2">
+            <div class = "header">
+                <h1 class = "playerText" id = "playerText2">Player 2</h1>
+                <p class = "totalScore" id = "totalScore2">0</p>
+            </div>
+
+            <div class = "currentBox">
+                <p class = "currentText">Current</p>
+                <p class = "currentDice" id = "currentDice2">0</p>
+            </div>
+        </div>
+
+        <button type = "button" class = "newGame">
+            <i class="fas fa-circle-notch"></i>
+            <h2>New Game</h2>
+        </button>
+    
+        <button type = "button" class = "rollDice">
+            <i class="fal fa-cube"></i>
+            <h2>Roll Dice</h2>
+        </button>
+    
+        <button type = "button" class = "hold">
+            <i class="fas fa-download"></i>
+            <h2>Hold</h2>
+        </button>
+
+        <div class = "diceBox">5</div>
+    </div>
+
+    <script src = "app.js"></script>
+    
+</body>
+</html>

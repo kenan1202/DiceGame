@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+body {
+  max-width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(#9b387d, #8f2227);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.box {
+  width: 900px;
+  height: 600px;
+  border-radius: 12px;
+  position: relative;
+  display: flex; }
+
+.player {
+  width: 450px;
+  height: 600px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.player .currentBox {
+  width: 150px;
+  height: 90px;
+  border-radius: 12px;
+  background-color: #9b387d;
+  text-align: center;
+  color: #fff;
+  position: relative; }
+
+.newGame {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 40px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  font-family: 'New Tegomin', serif;
+  font-weight: 700; }
+
+.newGame i {
+  color: #9b387d;
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: bold; }
+
+.rollDice {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 170px;
+  height: 40px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  font-family: 'New Tegomin', serif;
+  font-weight: 700; }
+
+.rollDice i {
+  color: #9b387d;
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: bold; }
+
+.hold {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  height: 40px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  font-family: 'New Tegomin', serif;
+  font-weight: 700; }
+
+.hold i {
+  color: #9b387d;
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: bold; }
+
+.diceBox {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 170px;
+  height: 170px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  font-family: 'New Tegomin', serif;
+  font-weight: 700;
+  font-size: 90px;
+  display: none; }
+
+.header .totalScore {
+  color: #9b387d;
+  font-size: 50px;
+  margin-top: -5px; }
+
+.currentBox .currentText {
+  font-size: 20px;
+  margin-top: 10px; }
+
+#player1 {
+  left: 0;
+  background-color: rgba(230, 230, 230, 0.8);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px; }
+
+#player2 {
+  right: 0;
+  background-color: rgba(230, 230, 230, 0.4);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px; }
+
+.player .header {
+  text-align: center; }
+
+.header .playerText {
+  font-size: 40px;
+  font-family: 'Noto Sans JP', sans-serif; }
+
+.player .currentText {
+  font-family: 'Noto Sans JP', sans-serif; }
+
+.currentBox .currentDice {
+  font-size: 32px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
